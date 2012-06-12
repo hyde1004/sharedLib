@@ -1,0 +1,15 @@
+http://www.joinc.co.kr/modules/moniwiki/wiki.php/Site/C/Documents/Make_Library
+
+http://www.lug.or.kr/docs/LINUX/others/98-11-2.htm
+
+
+-fPIC을 사용하는것은 언제나 동작한다. 하지만, -fpic을 사용하는 것보다 큰 코드를 생성할 것이다(PIC은 더 큰코드를 위한것이라서 더 많은 양의코드를 만든다는 것을 기억하라)
+
+-fpic옵션은 작고 빠른 코드를 만든다. 하지만, 전역심볼이나 코드의 크기 같은 것에서 플랫폼에 독립적
+
+(2) library loader 가 shared object를 찾는 순서. 
+1) 링크시 -rpath 옵션으로 준 디렉토리, 혹은 -L 옵션으로 지정한 shared object 
+2) ldconfig로 지정한 디렉토리 
+3) LD_LIBRARY_PATH 에 지정된 디렉토리 
+[출처] -fpic와 -fPIC - 둘의 차이점. 라이브러리|작성자 버드나무
+
